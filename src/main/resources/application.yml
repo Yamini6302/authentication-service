@@ -18,7 +18,8 @@ spring:
 
 logging:
   level:
-    root=DEBUG:
+    root: DEBUG
+
 
 server:
   port: 9997
