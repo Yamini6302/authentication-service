@@ -29,7 +29,7 @@ pipeline {
             steps {
                 echo 'Deploy done'
                  bat "docker build -t auth-service ."
-			             bat "docker run -p 9997:9997 -d --name auth-container auth-service"
+			             bat "docker run -p 9997:9997 -d --name authentication-container auth-service"
             }
 
         }
