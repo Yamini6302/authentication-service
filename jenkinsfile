@@ -21,8 +21,7 @@ pipeline {
          }
            stage('Deploy') {
             steps {
-		bat "docker rm authentication-service"
-		bat "docker rmi auth-service"
+		
                 echo 'Deploy done'
                  bat "docker build -t auth-service ."
 			             bat "docker run -p 9997:9997 -d --name authentication-service auth-service"
